@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vivek - Full Stack Developer & UI Specialist</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/6ee9b0206a.js" crossorigin="anonymous"></script>
+ 
+  
+</head>
+<body>
+
+  <div class="progress-container fixed-top">
+    <div class="progress-bar" id="scrollProgress"></div>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#hero_section">Vivek</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link" href="#hero_section">Home</a>
+                    <a class="nav-link" href="#about_section">About</a>
+                    <a class="nav-link" href="#skills_section">Skills</a>
+                    <a class="nav-link" href="#project_section">Projects</a>
+                    <a class="nav-link" href="#contact_section">Contact</a>
+                </div>
+            </div>
+        </div>
+  </nav>
+
+  <section id="hero_section" class="d-flex align-items-center min-vh-100 position-relative">
+    <div id="particles-js"></div>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-12 col-xl-7 text-center text-xl-left mb-5 mb-xl-0">
+          <p class="hero-subtitle animate-fade-in">Hi, I'm <span class="text-accent font-weight-bold">Vivek</span></p>
+          <h1 class="hero-title animate-slide-up">I craft elegant solutions that solve real-world problems.</h1>
+          <p class="hero-description animate-fade-in delay-1">
+            With expertise in full stack development and UI/UX principles, I build performant applications that users love.
+          </p>
+          <div class="hero-actions animate-fade-in delay-2">
+            <button class="btn btn-primary btn-lg mr-3" id="viewProjectsBtn">🔗 View Projects</button>
+            <button class="btn btn-outline-light btn-lg" id="letsTalkBtn">✉ Let's Talk</button>
+          </div>
+
+        </div>
+        <div class="col-12 col-xl-5 d-flex justify-content-center animate-fade-in delay-3">
+          <div class="hero-avatar-container shadow-lg">
+            <img src="WhatsApp_Image_2025-07-05_at_21.07.38_566b4cf0-removebg-preview.png" class="hero-avatar img-fluid" alt="vivek's Avatar">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about_section" class="py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-5 animate-fade-in">About Me</h2>
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4 mb-md-0 animate-slide-left" >
+          <img src="f75fe385808111ee887f56181a0358a2_upscaled-removebg-preview.png" alt="Vivek working on a project"  class="img-fluid rounded shadow-lg about-img">
+        </div>
+        <div class="col-md-6 text-white animate-slide-right">
+          <p class="lead mb-4">Hello! I'm Vivek, a Full Stack Developer with 4+ years building scalable web applications.</p>
+          <p class="mb-4">My journey began with frontend development and evolved into complete solutions architecture. I specialize in JavaScript ecosystems (React, Vue, Node) with expertise in performance optimization and clean code practices.</p>
+          <p class="mb-4">I'm passionate about creating intuitive interfaces powered by robust backend systems. When not coding, I enjoy photography and contributing to developer communities.</p>
+          <a href="#contact_section" class="btn btn-primary btn-lg mt-3">Get in Touch</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills_section" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <canvas id="skillsChart"></canvas>
+        </div>
+        <div class="col-md-6">
+          <!-- Existing skills bars -->
+    <div class="container">
+      <h2 class="section-title text-center mb-5 animate-fade-in">My Expertise</h2>
+      <div class="row">
+        <div class="col-md-6 mb-4 animate-slide-left">
+          <h4 class="text-white mb-4">Frontend Development</h4>
+          <div class="skill-bar-item">
+            <div class="skill-name text-white">HTML5 & CSS3</div>
+            <div class="progress">
+              <div class="progress-bar bg-accent" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+            </div>
+          </div>
+          <div class="skill-bar-item mt-4">
+            <div class="skill-name text-white">JavaScript (ES6+)</div>
+            <div class="progress">
+              <div class="progress-bar bg-accent" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+            </div>
+          </div>
+          <div class="skill-bar-item mt-4">
+            <div class="skill-name text-white">React.js</div>
+            <div class="progress">
+              <div class="progress-bar bg-accent" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+            </div>
+          </div>
+          <div class="skill-bar-item mt-4">
+            <div class="skill-name text-white">Bootstrap & Responsive Design</div>
+            <div class="progress">
+              <div class="progress-bar bg-accent" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4 animate-slide-right">
+          <h4 class="text-white mb-4">Backend & Database</h4>
+          <div class="skill-bar-item">
+            <div class="skill-name text-white">Node.js & Express.js</div>
+            <div class="progress">
+              <div class="progress-bar bg-accent" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+            </div>
+          </div>
+          <div class="skill-bar-item mt-4">
+            <div class="skill-name text-white">MongoDB</div>
+            <div class="progress">
+              <div class="progress-bar bg-accent" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+            </div>
+          </div>
+          <div class="skill-bar-item mt-4">
+            <div class="skill-name text-white">RESTful APIs</div>
+            <div class="progress">
+              <div class="progress-bar bg-accent" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+            </div>
+          </div>
+          <div class="skill-bar-item mt-4">
+            <div class="skill-name text-white">Git & GitHub</div>
+            <div class="progress">
+              <div class="progress-bar bg-accent" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats-section py-5">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-3">
+          <div class="counter" data-target="25">0</div>
+          <p>Projects Completed</p>
+        </div>
+        <div class="col-md-3">
+          <div class="counter" data-target="15">0</div>
+          <p>Happy Clients</p>
+        </div>
+        <div class="col-md-3">
+          <div class="counter" data-target="5">0</div>
+          <p>Years Experience</p>
+        </div>
+        <div class="col-md-3">
+          <div class="counter" data-target="50">0</div>
+          <p>Cups of Coffee</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="value-proposition-section py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-5 animate-fade-in">Why Work With Me?</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-4 mb-4 animate-fade-in delay-1">
+          <div class="value-card text-center p-4 rounded shadow-sm">
+            <i class="fas fa-lightbulb fa-3x text-accent mb-3"></i>
+            <h4 class="text-white mb-3">Innovative Solutions</h4>
+            <p class="text-muted">Bringing fresh ideas and cutting-edge technologies to solve complex problems.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4 animate-fade-in delay-2">
+          <div class="value-card text-center p-4 rounded shadow-sm">
+            <i class="fas fa-palette fa-3x text-accent mb-3"></i>
+            <h4 class="text-white mb-3">User-Centric Design</h4>
+            <p class="text-muted">Crafting intuitive and delightful user experiences that engage and convert.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4 animate-fade-in delay-3">
+          <div class="value-card text-center p-4 rounded shadow-sm">
+            <i class="fas fa-rocket fa-3x text-accent mb-3"></i>
+            <h4 class="text-white mb-3">Performance & Scalability</h4>
+            <p class="text-muted">Building robust and efficient applications designed for growth and speed.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="feedback-section py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-5 animate-fade-in">What People Say</h2>
+      <div class="row g-4 justify-content-center">
+        <!-- Testimonial 1 -->
+        <div class="col-md-5 mb-4 animate-slide-left">
+          <div class="feedback-card p-4 rounded shadow-sm">
+            <div class="d-flex flex-column align-items-center">
+              <img src="0d66abf9-8eec-4c56-a163-7b6b790cb76e_removalai_preview.png" class="rounded-circle mb-3 testimonial-avatar" alt="Priya Sharma">
+              <p class="text-white text-center testimonial-text">"Vivek is truly passionate about what he builds. He helped turn our website idea into a responsive and user-friendly design. Communication was clear and updates were fast."</p>
+              <p class="text-muted mt-3 testimonial-author">— Arya kumar <span class="text-accent">•</span> Startup Founder</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="col-md-5 mb-4 animate-slide-right">
+          <div class="feedback-card p-4 rounded shadow-sm">
+            <div class="d-flex flex-column align-items-center">
+              <img src="724ae9b6-0656-4beb-a729-26a6ea009a74_removalai_preview.png" class="rounded-circle mb-3 testimonial-avatar" alt="Rahul Verma">
+              <p class="text-white text-center testimonial-text">"Working with Vivek was smooth and productive. His eye for detail in UI and his quick grasp of our project goals made the whole experience excellent."</p>
+              <p class="text-muted mt-3 testimonial-author">— Vijay Ankoor <span class="text-accent">•</span> Product Manager</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="call-to-action-banner py-5 text-center">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-md-8 animate-fade-in">
+          <h2 class="banner-title mb-3">Ready to bring your vision to life?</h2>
+          <p class="banner-description mb-4">Let's collaborate on your next big project and create something amazing together.</p>
+          <a href="#contact_section" class="btn btn-primary btn-lg">Start a Project Today!</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="project_section" class="py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-5 animate-fade-in">My Recent Work</h2>
+      
+      <div class="filter-container mb-5 animate-fade-in delay-1">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web Development</button>
+          <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+          <button class="filter-btn" data-filter="design">UI/UX Design</button>
+      </div>
+      
+      <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card animate-zoom-in" data-category="web">
+            <div class="project-overlay">
+              <div class="overlay-content">
+                <h4>View Details</h4>
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </div>
+              <div class="project-image">
+                  <img src="Screenshot 2025-07-05 212039.png" alt="Modern e-commerce dashboard with product analytics and sales metrics visualization">
+              </div>
+              <div class="project-content">
+                  <h3 class="project-title">E-Commerce Dashboard</h3>
+                  <p class="project-description">
+                      A comprehensive dashboard for e-commerce businesses with real-time analytics, sales tracking, and inventory management.
+                  </p>
+                  <div class="project-tech">
+                      <span class="tech-tag">React</span>
+                      <span class="tech-tag">Node.js</span>
+                      <span class="tech-tag">MongoDB</span>
+                      <span class="tech-tag">D3.js</span>
+                  </div>
+                  <div class="project-links">
+                      <a href="#" class="project-link demo-link">Live Demo <i class="fas fa-external-link-alt ml-1"></i></a>
+                      <a href="#" class="project-link code-link">View Code <i class="fab fa-github ml-1"></i></a>
+                  </div>
+              </div>
+          </div>
+          
+          <!-- Project 2 -->
+          <div class="project-card animate-zoom-in" data-category="mobile">
+              <div class="project-image">
+                  <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/9599a7ad-e36e-4ac7-aeef-b69b671d5392.png" alt="Fitness tracking mobile app interface showing workout progress and health statistics">
+              </div>
+              <div class="project-content">
+                  <h3 class="project-title">Fitness Tracker</h3>
+                  <p class="project-description">
+                      Cross-platform mobile application for tracking workouts, nutrition, and health metrics with personalized recommendations.
+                  </p>
+                  <div class="project-tech">
+                      <span class="tech-tag">Flutter</span>
+                      <span class="tech-tag">Firebase</span>
+                      <span class="tech-tag">Dart</span>
+                  </div>
+                  <div class="project-links">
+                      <a href="#" class="project-link demo-link">App Store <i class="fas fa-external-link-alt ml-1"></i></a>
+                      <a href="#" class="project-link code-link">View Code <i class="fab fa-github ml-1"></i></a>
+                  </div>
+              </div>
+          </div>
+          
+          <!-- Project 3 -->
+          <div class="project-card animate-zoom-in" data-category="design">
+              <div class="project-image">
+                  <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d5b8f537-a8e5-446b-b5c4-65281def44df.png" alt="Minimalist banking app design mockup showing clean interface with transaction history">
+              </div>
+              <div class="project-content">
+                  <h3 class="project-title">Banking App UI</h3>
+                  <p class="project-description">
+                      Modern banking application UI design with focus on accessibility and user experience for financial transactions.
+                  </p>
+                  <div class="project-tech">
+                      <span class="tech-tag">Figma</span>
+                      <span class="tech-tag">Adobe XD</span>
+                      <span class="tech-tag">UI Design</span>
+                  </div>
+                  <div class="project-links">
+                      <a href="#" class="project-link demo-link">Prototype <i class="fas fa-external-link-alt ml-1"></i></a>
+                      <a href="#" class="project-link code-link">Case Study <i class="fas fa-file-alt ml-1"></i></a>
+                  </div>
+              </div>
+          </div>
+          
+          <!-- Project 4 -->
+          <div class="project-card animate-zoom-in" data-category="web">
+              <div class="project-image">
+                  <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/814fc2c5-119b-474d-8f04-8dbae3ddf146.png" alt="Social media platform interface with user profiles and content feed in dark mode">
+              </div>
+              <div class="project-content">
+                  <h3 class="project-title">Social Network</h3>
+                  <p class="project-description">
+                      Full-stack social networking platform with user authentication, real-time notifications, and content sharing.
+                  </p>
+                  <div class="project-tech">
+                      <span class="tech-tag">Vue.js</span>
+                      <span class="tech-tag">Express</span>
+                      <span class="tech-tag">PostgreSQL</span>
+                      <span class="tech-tag">Socket.IO</span>
+                  </div>
+                  <div class="project-links">
+                      <a href="#" class="project-link demo-link">Live Demo <i class="fas fa-external-link-alt ml-1"></i></a>
+                      <a href="#" class="project-link code-link">View Code <i class="fab fa-github ml-1"></i></a>
+                  </div>
+              </div>
+          </div>
+          
+          <!-- Project 5 -->
+          <div class="project-card animate-zoom-in" data-category="mobile">
+              <div class="project-image">
+                  <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/730336ac-c3ff-4af6-aa76-bfded4d502e9.png" alt="Recipe mobile app showing detailed cooking instructions with step-by-step photos">
+              </div>
+              <div class="project-content">
+                  <h3 class="project-title">Recipe Finder</h3>
+                  <p class="project-description">
+                      Mobile application for discovering recipes based on available ingredients with dietary restriction filters.
+                  </p>
+                  <div class="project-tech">
+                      <span class="tech-tag">React Native</span>
+                      <span class="tech-tag">Redux</span>
+                      <span class="tech-tag">REST API</span>
+                  </div>
+                  <div class="project-links">
+                      <a href="#" class="project-link demo-link">Play Store <i class="fas fa-external-link-alt ml-1"></i></a>
+                      <a href="#" class="project-link code-link">View Code <i class="fab fa-github ml-1"></i></a>
+                  </div>
+              </div>
+          </div>
+          
+          <!-- Project 6 -->
+          <div class="project-card animate-zoom-in" data-category="design">
+              <div class="project-image">
+                  <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b7035ff3-2168-4aed-8829-2345fc64007e.png" alt="Creative portfolio website design with animated transitions and bold typography">
+              </div>
+              <div class="project-content">
+                  <h3 class="project-title">Portfolio Website</h3>
+                  <p class="project-description">
+                      Elegant portfolio website design for creative professionals with animated transitions and bold typography.
+                  </p>
+                  <div class="project-tech">
+                      <span class="tech-tag">Sketch</span>
+                      <span class="tech-tag">Principle</span>
+                      <span class="tech-tag">Motion Design</span>
+                  </div>
+                  <div class="project-links">
+                      <a href="#" class="project-link demo-link">Prototype <i class="fas fa-external-link-alt ml-1"></i></a>
+                      <a href="#" class="project-link code-link">Case Study <i class="fas fa-file-alt ml-1"></i></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="contact_section" class="py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-5 animate-fade-in">Get in Touch</h2>
+      
+      <!-- Contact Information Cards -->
+      <div class="row mb-5">
+        <div class="col-md-4 mb-4 animate-fade-in delay-1">
+          <div class="contact-info-card text-center p-4 rounded shadow-lg">
+            <div class="contact-icon-wrapper mb-3">
+              <i class="fas fa-envelope fa-3x text-accent"></i>
+            </div>
+            <h4 class="text-white mb-2">Email</h4>
+            <p class="text-muted mb-3">Let's discuss your project</p>
+            <a href="mailto:vivekulleri@gmail.com" class="contact-link">
+              <span class="contact-text">vivekulleri@gmail.com</span>
+              <i class="fas fa-external-link-alt ml-2"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div class="col-md-4 mb-4 animate-fade-in delay-2">
+          <div class="contact-info-card text-center p-4 rounded shadow-lg">
+            <div class="contact-icon-wrapper mb-3">
+              <i class="fas fa-phone fa-3x text-accent"></i>
+            </div>
+            <h4 class="text-white mb-2">Phone</h4>
+            <p class="text-muted mb-3">Call me directly</p>
+            <a href="tel:+919446915096" class="contact-link">
+              <span class="contact-text">+91 94469 15096</span>
+              <i class="fas fa-phone ml-2"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div class="col-md-4 mb-4 animate-fade-in delay-3">
+          <div class="contact-info-card text-center p-4 rounded shadow-lg">
+            <div class="contact-icon-wrapper mb-3">
+              <i class="fab fa-linkedin fa-3x text-accent"></i>
+            </div>
+            <h4 class="text-white mb-2">LinkedIn</h4>
+            <p class="text-muted mb-3">Connect professionally</p>
+            <a href="https://www.linkedin.com/in/vivek-u-87b454320?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="contact-link">
+              <span class="contact-text">linkedin.com/in/vivek-u-87b454320</span>
+              <i class="fas fa-external-link-alt ml-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="row justify-content-center">
+        <div class="col-md-8 animate-fade-in delay-4">
+          <div class="contact-card p-4 rounded shadow-lg">
+            <div class="text-center mb-4">
+              <h3 class="text-white mb-2">Send me a Message</h3>
+              <p class="text-muted">I'll get back to you within 24 hours</p>
+            </div>
+            
+            <form id="contactForm" class="contact-form">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="name" class="text-white">
+                      <i class="fas fa-user mr-2"></i>Full Name
+                    </label>
+                    <input type="text" class="form-control contact-input" id="name" placeholder="Your full name" required>
+                    <div class="input-focus-border"></div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="email" class="text-white">
+                      <i class="fas fa-envelope mr-2"></i>Email Address
+                    </label>
+                    <input type="email" class="form-control contact-input" id="email" placeholder="your.email@example.com" required>
+                    <div class="input-focus-border"></div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="subject" class="text-white">
+                  <i class="fas fa-tag mr-2"></i>Subject
+                </label>
+                <input type="text" class="form-control contact-input" id="subject" placeholder="What's this about?" required>
+                <div class="input-focus-border"></div>
+              </div>
+              
+              <div class="form-group">
+                <label for="message" class="text-white">
+                  <i class="fas fa-comment mr-2"></i>Message
+                </label>
+                <textarea class="form-control contact-input" id="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                <div class="input-focus-border"></div>
+                <div class="char-counter">
+                  <span id="charCount">0</span>/1000 characters
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="budget" class="text-white">
+                  <i class="fas fa-dollar-sign mr-2"></i>Budget Range (Optional)
+                </label>
+                <select class="form-control contact-input" id="budget">
+                  <option value="">Select budget range</option>
+                  <option value="under-5k">Under $5,000</option>
+                  <option value="5k-10k">$5,000 - $10,000</option>
+                  <option value="10k-25k">$10,000 - $25,000</option>
+                  <option value="25k-50k">$25,000 - $50,000</option>
+                  <option value="over-50k">Over $50,000</option>
+                  <option value="discuss">Let's discuss</option>
+                </select>
+                <div class="input-focus-border"></div>
+              </div>
+              
+              <div class="form-group">
+                <label for="timeline" class="text-white">
+                  <i class="fas fa-calendar mr-2"></i>Timeline (Optional)
+                </label>
+                <select class="form-control contact-input" id="timeline">
+                  <option value="">Select timeline</option>
+                  <option value="asap">ASAP</option>
+                  <option value="1-2-weeks">1-2 weeks</option>
+                  <option value="1-month">1 month</option>
+                  <option value="2-3-months">2-3 months</option>
+                  <option value="flexible">Flexible</option>
+                </select>
+                <div class="input-focus-border"></div>
+              </div>
+              
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary btn-lg contact-submit-btn">
+                  <span class="btn-text">Send Message</span>
+                  <span class="btn-loading d-none">
+                    <i class="fas fa-spinner fa-spin mr-2"></i>Sending...
+                  </span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <button id="backToTop" class="btn btn-primary rounded-circle">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+  <footer class="footer py-4 mt-5">
+    <div class="container text-center text-white">
+      <p class="mb-3">&copy; 2023 Vivek. All rights reserved.</p>
+      <div class="social-links">
+        <a href="#" class="text-white mx-3 social-icon"><i class="fab fa-linkedin fa-2x"></i></a>
+        <a href="#" class="text-white mx-3 social-icon"><i class="fab fa-github fa-2x"></i></a>
+        <a href="#" class="text-white mx-3 social-icon"><i class="fab fa-twitter fa-2x"></i></a>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html></html>
